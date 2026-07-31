@@ -1,0 +1,81 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+
+#front-page {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('opening-page.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+}
+
+#jar-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 1229px;
+    height: 691px;
+
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+
+
+    animation: shakeEffect 1s infinite steps(1);
+}
+
+@keyframes shakeEffect {
+     0% {
+            background-image: url('jar-leaning-left.png');
+     }
+    50% {
+            background-image: url('jar-leaning-right.png');
+     }
+ }
+
+ #quote-page {
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('quote-page.png');
+    background-repeat: no-repeat;
+    border: none;
+    background-position: center center;
+    background-size: cover;
+
+    position: relative;
+ }
+
+ .hidden {
+    display: none !important;
+ }
+
+ #bible-verse {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+
+   width: 80%;
+   max-width: 500px;
+
+   font-family: 'Schoolbell', cursive;
+   font-size: 35px;
+   text-align: center;
+   color: black;
+ };
